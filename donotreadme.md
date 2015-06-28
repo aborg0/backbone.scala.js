@@ -1,0 +1,3 @@
+Started the work based on [path.scala.js](https://github.com/andreaferretti/paths-scala-js) and the [DefinitelyTyped] [typescript](https://github.com/borisyankov/DefinitelyTyped/tree/master/backbone) ([1.0.0?](https://github.com/borisyankov/DefinitelyTyped/blob/f42164e284d20bfebdea9a6283dc387359f1a46a/backbone/backbone.d.ts)) for [backbone.js](https://github.com/jashkenas/backbone) [1.0.0](https://github.com/jashkenas/backbone/releases/tag/1.0.0) using [Importer from TypeScript type definitions to Scala.js](https://github.com/sjrd/scala-js-ts-importer).
+
+https://github.com/d6y/wootjs/blob/master/build.sbt was also used as inspiration.
