@@ -11,7 +11,7 @@ name := "backbone-scala-js"
 
 version := "0.0.10000"
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.7"
 
 persistLauncher in Compile := true
 
@@ -19,11 +19,15 @@ persistLauncher in Test := false
 
 testFrameworks += new TestFramework("utest.runner.Framework")
 
-libraryDependencies += "com.mind_era" %%% "underscore-scala-js" % "0.0.10700"
+//libraryDependencies += "com.mind_era" %%% "underscore-scala-js" % "0.0.10700"
+
+libraryDependencies += "com.lihaoyi" %%% "utest" % "0.3.1" % "test"
 
 libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.8.0"
 
-jsDependencies += "org.webjars" % "backbonejs" % "1.0.0-1" / "backbone.js"
+jsDependencies += "org.webjars" % "underscorejs" % "1.8.3" / "underscore.js"
+
+jsDependencies += "org.webjars" % "backbonejs" % "1.0.0-1" / "backbone.js" dependsOn "underscore.js"
 
 skip in packageJSDependencies := false
 

@@ -2,7 +2,7 @@
 import scala.scalajs.js
 import js.annotation._
 import org.scalajs.jquery._
-import com.mind_era.underscore._
+//import com.mind_era.underscore._
 import org.scalajs.dom.raw.Window
 import org.scalajs.dom.raw.HTMLElement
 
@@ -183,8 +183,8 @@ class Collection[TModel <: Model] protected () extends ModelBase {
   def collect(iterator: js.Function3[TModel, Double, js.Any, js.Array[js.Any]], context: js.Any = ???): js.Array[js.Any] = js.native
   def chain(): js.Dynamic = js.native
   def contains(value: js.Any): Boolean = js.native
-  def countBy(iterator: js.Function2[TModel, Double, Any]): com.mind_era.underscore.Dictionary[Double] = js.native
-  def countBy(attribute: String): com.mind_era.underscore.Dictionary[Double] = js.native
+  def countBy(iterator: js.Function2[TModel, Double, Any]): js.Dictionary[Double] = js.native
+  def countBy(attribute: String): js.Dictionary[Double] = js.native
   def detect(iterator: js.Function1[js.Any, Boolean], context: js.Any = ???): js.Dynamic = js.native
   def drop(): TModel = js.native
   def drop(n: Double): js.Array[TModel] = js.native
@@ -196,9 +196,9 @@ class Collection[TModel <: Model] protected () extends ModelBase {
   def first(n: Double): js.Array[TModel] = js.native
   def foldl(iterator: js.Function3[js.Any, TModel, Double, Any], initialMemo: js.Any, context: js.Any = ???): js.Dynamic = js.native
   def forEach(iterator: js.Function3[TModel, Double, js.Any, Unit], context: js.Any = ???): js.Dynamic = js.native
-  def groupBy(iterator: js.Function2[TModel, Double, String], context: js.Any = ???): com.mind_era.underscore.Dictionary[js.Array[TModel]] = js.native
+  def groupBy(iterator: js.Function2[TModel, Double, String], context: js.Any = ???): js.Dictionary[js.Array[TModel]] = js.native
   @JSName("groupBy")
-  def groupByAttribute(attribute: String, context: js.Any = ???): com.mind_era.underscore.Dictionary[js.Array[TModel]] = js.native
+  def groupByAttribute(attribute: String, context: js.Any = ???): js.Dictionary[js.Array[TModel]] = js.native
   def include(value: js.Any): Boolean = js.native
   def indexOf(element: TModel, isSorted: Boolean = ???): Double = js.native
   def initial(): TModel = js.native
