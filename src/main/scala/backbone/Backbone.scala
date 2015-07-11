@@ -2,7 +2,6 @@
 import scala.scalajs.js
 import js.annotation._
 import org.scalajs.jquery._
-//import com.mind_era.underscore._
 import org.scalajs.dom.raw.Window
 import org.scalajs.dom.raw.HTMLElement
 

@@ -23,7 +23,11 @@ testFrameworks += new TestFramework("utest.runner.Framework")
 
 libraryDependencies += "com.lihaoyi" %%% "utest" % "0.3.1" % "test"
 
+libraryDependencies += "org.scalatest" %%% "scalatest" % "3.0.0-M6" % "test"
+
 libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.8.0"
+
+jsDependencies += RuntimeDOM % "test"
 
 jsDependencies += "org.webjars" % "underscorejs" % "1.8.3" / "underscore.js"
 
